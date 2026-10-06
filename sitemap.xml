@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://naqlafsh-kuwait.com/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://naqlafsh-kuwait.com/%D9%86%D9%82%D9%84%20%D8%B9%D9%81%D8%B4.jpg</image:loc>
+      <image:title>نقل عفش الكويت - شركة نقل أثاث فك وتركيب وتغليف</image:title>
+      <image:caption>نقل عفش الكويت رقم الهاتف 65655775</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://naqlafsh-kuwait.com/%D9%86%D9%82%D9%84%20%D8%B9%D9%81%D8%B4%20(1).jpg</image:loc>
+      <image:title>شركة نقل عفش الكويت</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naqlafsh-kuwait.com/%D9%86%D9%82%D9%84%20%D8%B9%D9%81%D8%B4%20(2).jpg</image:loc>
+      <image:title>فني نقل عفش نجار فك وتركيب الأثاث</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naqlafsh-kuwait.com/%D9%86%D9%82%D9%84%20%D8%B9%D9%81%D8%B4%20(3).jpg</image:loc>
+      <image:title>تغليف عفش وتغليف أثاث الكويت</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naqlafsh-kuwait.com/%D9%86%D9%82%D9%84%20%D8%B9%D9%81%D8%B4%20(4).jpg</image:loc>
+      <image:title>سيارة نقل عفش الكويت هاف لوري مجهز</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naqlafsh-kuwait.com/%D9%86%D9%82%D9%84%20%D8%B9%D9%81%D8%B4%20(5).jpg</image:loc>
+      <image:title>ونش نقل عفش هيدروليكي الكويت</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://naqlafsh-kuwait.com/#services</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://naqlafsh-kuwait.com/#gallery</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://naqlafsh-kuwait.com/#areas</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://naqlafsh-kuwait.com/#faq</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://naqlafsh-kuwait.com/#contact</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
