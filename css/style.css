@@ -1685,3 +1685,488 @@ ul {
   margin-bottom: 8px;
 }
 
+/* ==========================================================================
+   Equipped Moving Trucks Fleet & Feature Sections (سيارات مجهزة لنقل العفش)
+   ========================================================================== */
+
+/* Section 1: Equipped Trucks Section */
+.equipped-trucks-section {
+  padding: 80px 0;
+  background: #ffffff;
+  position: relative;
+}
+
+.trucks-showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-bottom: 45px;
+}
+
+@media (min-width: 992px) {
+  .trucks-showcase-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.truck-showcase-card {
+  background: var(--bg-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.truck-showcase-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(2, 75, 134, 0.35);
+}
+
+.truck-card-media {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+@media (min-width: 768px) {
+  .truck-card-media {
+    height: 320px;
+  }
+}
+
+.truck-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.truck-showcase-card:hover .truck-card-img {
+  transform: scale(1.06);
+}
+
+.truck-card-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(2, 75, 134, 0.9);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 800;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.truck-zoom-hint {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(15, 23, 42, 0.8);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  backdrop-filter: blur(4px);
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.truck-showcase-card:hover .truck-zoom-hint,
+.poster-frame:hover .truck-zoom-hint {
+  opacity: 1;
+  background: var(--accent);
+}
+
+.truck-card-content {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.truck-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.truck-card-icon {
+  width: 46px;
+  height: 46px;
+  background: rgba(2, 75, 134, 0.1);
+  color: var(--primary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.truck-card-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--dark);
+  line-height: 1.3;
+}
+
+.truck-card-sub {
+  font-size: 0.82rem;
+  color: var(--accent);
+  font-weight: 700;
+  display: block;
+  margin-top: 2px;
+}
+
+.truck-card-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.truck-specs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px dashed var(--border-color);
+}
+
+.truck-specs-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--dark-soft);
+  font-weight: 600;
+}
+
+.spec-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* 4-Column Fleet Features */
+.fleet-features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 45px;
+}
+
+@media (min-width: 576px) {
+  .fleet-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .fleet-features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.fleet-feature-card {
+  background: #ffffff;
+  padding: 22px 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.fleet-feature-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.fleet-feat-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.fleet-feat-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.fleet-feat-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Section 1 Callout Banner */
+.trucks-cta-banner {
+  background: linear-gradient(135deg, var(--dark), var(--primary-dark));
+  color: #fff;
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-md);
+}
+
+@media (min-width: 860px) {
+  .trucks-cta-banner {
+    flex-direction: row;
+    padding: 30px 40px;
+  }
+}
+
+.trucks-cta-text strong {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.trucks-cta-text span {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+.trucks-cta-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ==========================================================================
+   Section 2: Truck Features & 24/7 Shifting Services
+   ========================================================================== */
+.truck-features-section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, var(--bg-light) 0%, #ffffff 100%);
+  position: relative;
+  border-top: 1px solid var(--border-color);
+}
+
+.truck-features-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 992px) {
+  .truck-features-split {
+    grid-template-columns: 0.95fr 1.05fr;
+  }
+}
+
+/* Poster Column */
+.poster-display-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.poster-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(2, 75, 134, 0.15);
+  border: 4px solid #fff;
+  background: #0f172a;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.poster-frame:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 20px 40px rgba(2, 75, 134, 0.25);
+}
+
+.poster-img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+.poster-badge-floating {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: rgba(15, 23, 42, 0.9);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+}
+
+.p-badge-pulse {
+  width: 10px;
+  height: 10px;
+  background: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  animation: pulseGreen 2s infinite;
+}
+
+@keyframes pulseGreen {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(34, 197, 94, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+
+.poster-caption-card {
+  background: #fff;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+/* Features List Column (Pillars) */
+.truck-features-list-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-pillar-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: var(--transition);
+}
+
+.service-pillar-card:hover {
+  transform: translateX(-5px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.pillar-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.pillar-info {
+  flex-grow: 1;
+}
+
+.pillar-title {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 5px;
+  line-height: 1.35;
+}
+
+.pillar-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* Bottom Conversion Strip */
+.trucks-bottom-bar {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  padding: 25px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (min-width: 860px) {
+  .trucks-bottom-bar {
+    flex-direction: row;
+  }
+}
+
+.t-bottom-info {
+  text-align: center;
+}
+
+@media (min-width: 860px) {
+  .t-bottom-info {
+    text-align: right;
+  }
+}
+
+.t-bottom-badge {
+  display: inline-block;
+  background: rgba(37, 211, 102, 0.15);
+  color: #15803d;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  margin-bottom: 6px;
+}
+
+.t-bottom-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+.t-bottom-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+

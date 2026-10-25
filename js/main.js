@@ -136,16 +136,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var lightboxCaption = document.getElementById('lightboxCaption');
   var lightboxClose = document.getElementById('lightboxClose');
 
-  galleryItems.forEach(function (item) {
+  var allLightboxTriggers = document.querySelectorAll('.gallery-item, .lightbox-trigger');
+  allLightboxTriggers.forEach(function (item) {
     item.addEventListener('click', function () {
       var img = item.querySelector('img');
-      var title = item.querySelector('.gallery-title');
+      var titleEl = item.querySelector('.gallery-title, .truck-card-title');
+      var titleText = item.getAttribute('data-title') || (titleEl ? titleEl.textContent : '') || (img ? img.alt : '');
 
       if (lightbox && lightboxImg && img) {
         lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-        if (lightboxCaption && title) {
-          lightboxCaption.textContent = title.textContent;
+        lightboxImg.alt = img.alt || titleText;
+        if (lightboxCaption) {
+          lightboxCaption.textContent = titleText;
         }
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
