@@ -1,6 +1,6 @@
 /**
  * نقل عفش الكويت - الجافاسكريبت الرئيسي وتتبع الإحالات الإعلانية
- * رقم الاتصال: 65655775
+ * رقم الاتصال: 55425284
  */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
       trackConversion('conversion_call_click', {
         event_category: 'Contact',
         event_label: source,
-        phone_number: '65655775'
+        phone_number: '55425284'
       });
     });
   });
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Construct WhatsApp message if user wants direct follow-up
       var waText = encodeURIComponent('مرحباً شركة نقل عفش الكويت، أرغب بالتواصل بخصوص خدمة نقل الأثاث. رقم هاتفي: ' + cleanPhone + (descVal ? '\nتفاصيل الطلب: ' + descVal : ''));
-      var waUrl = 'https://wa.me/96565655775?text=' + waText;
+      var waUrl = 'https://wa.me/96555425284?text=' + waText;
 
       // Reset form fields
       phoneInput.value = '';
